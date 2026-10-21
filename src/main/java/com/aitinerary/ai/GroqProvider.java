@@ -215,6 +215,7 @@ public class GroqProvider implements AiProvider {
         return apiKey != null && 
                !apiKey.isEmpty() && 
                !apiKey.startsWith("${") &&
+               !apiKey.equals("not_configured") &&
                model != null &&
                !model.isEmpty();
     }

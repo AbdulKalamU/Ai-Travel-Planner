@@ -186,6 +186,7 @@ public class GeminiProvider implements AiProvider {
         return apiKey != null && 
                !apiKey.isEmpty() && 
                !apiKey.startsWith("${") &&
+               !apiKey.equals("not_configured") &&
                model != null;
     }
 }
